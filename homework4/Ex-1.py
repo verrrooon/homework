@@ -1,6 +1,7 @@
 from random import randint
 
 a = [randint(0, 35) for _ in range(50)]
+"""создание списка 50 рандомных чисел из диапазона от 0 до 35"""
 print('До сортировки:', a)
 
 for i in range(len(a)):

@@ -1,5 +1,5 @@
 try:
-    f = open('homework6/Ex-2/input.txt', 'r') 
+    f = open('homework6/Ex-2/input.txt', 'r')
     lst = list(f)
     lst = lst[0].split()
     rez = min(int(lst[0])//2, int(lst[1])//6, int(lst[2]))

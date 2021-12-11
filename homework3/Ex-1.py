@@ -1,15 +1,15 @@
-direction = input("Введите направление: влево, вправо, вверх, вниз \n" )
-check = ["влево","вправо","вверх","вниз"]
+"""программа для вычисления конечных координат при заданном направлении
+"""
+direction = input("Введите направление: влево, вправо, вверх, вниз \n")
+check = ["влево", "вправо", "вверх", "вниз"]
 if direction not in check:
     print("Введите корректное направление!")
-else: 
+else:
     quantity = float(input("Введите число шагов \n"))
-    
-    if  quantity < 0 :
+    if quantity < 0:
         print("Количество шагов не может быть отрицательным!")
     else:
-        
-        coordinates = [0,0]
+        coordinates = [0, 0]
         if direction == "влево":
             coordinates[0] = 0 - quantity
             print("Конечные координаты =", coordinates)
